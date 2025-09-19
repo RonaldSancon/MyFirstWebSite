@@ -8,15 +8,41 @@
   <!-- Open Graph meta tags for better sharing preview -->
   <meta property="og:title" content="Shopee Items For Sale" />
   <meta property="og:description" content="Check out products on Shoppee!" />
-  <meta property="og:image" content="https://github.com/RonaldSancon/MyFirstWebSite/tree/main/images/shoppee.jpg" />
+  <meta property="og:image" content="https://raw.githubusercontent.com/RonaldSancon/MyFirstWebSite/main/images/shoppee.jpg" />
   <meta property="og:url" content="https://ronaldsancon.github.io/MyFirstWebSite/" />
   <meta property="og:type" content="website" />
 
-  <!-- Optional: add some basic styling -->
+  <style>
+    /* Make the image fill the screen dynamically and maintain aspect ratio */
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    /* Optional: style the header and link */
+    h1, p {
+      margin: 10px;
+    }
+    a {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    /* Style for the full-screen image */
+    #fullImage {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
   <h1>Shoppee Items For Sale</h1>
   <p>Click here >: <a href="https://collshp.com/shoppeeniron" target="_blank">View Items For Sale</a></p>
-  <img src="https://raw.githubusercontent.com/RonaldSancon/MyFirstWebSite/main/images/shoppee.jpg" alt="Shoppee Items" width="300"/>
+  
+  <!-- Clickable image that opens full size -->
+  <a href="https://raw.githubusercontent.com/RonaldSancon/MyFirstWebSite/main/images/shoppee.jpg" target="_blank">
+    <img id="fullImage" src="https://raw.githubusercontent.com/RonaldSancon/MyFirstWebSite/main/images/shoppee.jpg" alt="Shoppee Items" />
+  </a>
 </body>
 </html>
